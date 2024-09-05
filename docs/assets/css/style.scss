@@ -36,3 +36,42 @@ body {
 .sticky + .content {
     padding-top: 147px;
 }
+
+@keyframes hover_project {
+    from {
+        width: 225px;
+        height: 250px;
+        margin: 8px;
+    }
+    to {
+        width: 233px;
+        height: 258px;
+        margin: 4px;
+    }
+}
+:root {
+    --card-color: linear-gradient(180deg, #000000 0%, #000416 27%, #0c0c40 100%);
+}
+
+.project-card {
+    display: inline-table;
+    width: 225px;
+    height: 250px;
+    padding: 4px;
+    margin: 8px;
+    border-radius: 6px;
+    background: #000000;
+    background: var(--card-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-card > h1 {
+    text-align: center;
+}
+
+.project-card:hover {
+    animation-name: hover_project;
+    animation-duration: 0.5s;
+}
+
