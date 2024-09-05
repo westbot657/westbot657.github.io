@@ -18,15 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Weston
-email: westbot657@gmail.com
+locale: "en-US"
+title: "Westbot"
+email: Westbot657@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   The place for all of Weston's projects and stuff
 baseurl: "/docs" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-site_name: Westbot
-name: Westbot
-github_username: westbot657
+name: &name "Westbot"
+github_username: Westbot657
 
 # Build settings
 theme: minima
