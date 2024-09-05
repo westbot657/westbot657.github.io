@@ -22,3 +22,17 @@ body {
 .wd-header {
     color: #d3d3d3
 }
+
+.content {
+    padding: 32px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
