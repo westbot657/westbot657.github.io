@@ -2,7 +2,7 @@
 const project_data = {
     "Insert Dungeon Name Here": {
         "url": "https://raw.githubusercontent.com/westbot657/DungeonEngine/main/project_meta.json",
-        "background": "assets/content/dungeon_engine_bg.png"
+        "background": "/assets/content/dungeon_engine_bg.png"
     },
     "Ethereal Enchanting": {
         "url": "https://raw.githubusercontent.com/westbot657/EtherealEnchanting/main/project_meta.json",
@@ -28,7 +28,7 @@ function main() {
                 let meta = await axios.get(val.url);
                 
                 let card =
-                "<div class='project-card' style='background-image:url(`"+ val.background +"`)'>\
+                "<div class='project-card' style=\"background-image:url('"+ val["background"] +"')\">\
                 <h1>"+ key +"</h1>\
                 <p>"+ meta.data.description +"</p>\
                 <p class='project-version'>"+ meta.data.version +"</p>\
