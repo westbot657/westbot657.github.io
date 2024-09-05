@@ -4,7 +4,8 @@
 @import "{{ site.theme }}";
 
 body {
-    background-color: #202020;
+    background: rgb(1,0,10);
+    background: linear-gradient(90deg, rgba(1,0,10,1) 0%, rgba(9,9,121,1) 27%, rgba(162,83,0,1) 100%);
     color: #EEEEEE;
 }
 
