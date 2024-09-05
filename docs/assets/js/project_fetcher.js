@@ -5,7 +5,7 @@ const project_data = {
         "background": "/assets/content/dungeon_engine_bg.png"
     },
     "Ethereal Enchanting": {
-        "url": "https://raw.githubusercontent.com/westbot657/EtherealEnchanting/main/project_meta.json",
+        "url": "https://raw.githubusercontent.com/westbot657/EtherealEnchanting/master/project_meta.json",
         "background": ""
     },
     "UI Library": {
