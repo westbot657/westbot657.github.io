@@ -6,7 +6,7 @@ const project_data = {
     },
     "Ethereal Enchanting": {
         "url": "https://raw.githubusercontent.com/westbot657/EtherealEnchanting/master/project_meta.json",
-        "background": ""
+        "background": "/assets/content/ethereal_enchanting_bg.png"
     },
     "UI Library": {
         "url": "https://raw.githubusercontent.com/westbot657/UILibrary/main/project_meta.json",
