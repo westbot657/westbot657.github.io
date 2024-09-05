@@ -4,11 +4,21 @@
 @import "{{ site.theme }}";
 
 body {
-    background: rgb(1,0,10);
-    background: linear-gradient(90deg, rgba(1,0,10,1) 0%, rgba(9,9,121,1) 27%, rgba(162,83,0,1) 100%);
+    background: #090909;
     color: #EEEEEE;
 }
 
-a {
-    color: #72a2da
+.gradient-container {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+    background: rgb(5,3,3);
+    background: -moz-linear-gradient(119deg, rgba(5,3,3,1) 0%, rgba(11,6,144,1) 29%, rgba(170,71,17,1) 100%);
+    background: -webkit-linear-gradient(119deg, rgba(5,3,3,1) 0%, rgba(11,6,144,1) 29%, rgba(170,71,17,1) 100%);
+    background: linear-gradient(119deg, rgba(5,3,3,1) 0%, rgba(11,6,144,1) 29%, rgba(170,71,17,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#050303",endColorstr="#aa4711",GradientType=1);
+    background-repeat: no-repeat;
+}
+
+.wd-header {
+    color: #d3d3d3
 }
