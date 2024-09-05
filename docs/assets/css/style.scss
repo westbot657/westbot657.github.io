@@ -48,16 +48,17 @@ body {
         width: 233px;
         height: 258px;
         margin: 4px;
+        margin-bottom: 2px;
     }
 }
 
 @keyframes hover_version {
     from {
-        height: 22%;
+        height: 208px;
         align-content: end;
     }
     to {
-        height: 22.75%;
+        height: 216px;
         align-content: end;
     }
 }
@@ -93,6 +94,7 @@ body {
     width: 233px;
     height: 258px;
     margin: 4px;
+    margin-bottom: 2px;
 }
 
 .header-right {
@@ -110,13 +112,44 @@ body {
 }
 
 .project-card > .project-version {
-    height: 22%;
+    height: 208px;
     align-content: end;
 }
 
 .project-card:hover > .project-version {
-    height: 22.75%;
+    height: 216px;
     align-content: end;
     animation-duration: 0.5s;
     animation-name: hover_version;
 }
+
+.project-langs {
+    height: 206px;
+    align-content: end;
+    position: absolute;
+    width: 215px;
+}
+
+@keyframes hover_langs {
+    from {
+        width: 215px;
+        height: 206px;
+    }
+    to {
+        width: 223px;
+        height: 214px;
+    }
+}
+
+.project-langs > .project-lang {
+    width: 40px;
+    float: right;
+    
+}
+.project-langs:hover {
+    height: 214px;
+    width: 223px;
+    animation-name: hover_langs;
+    animation-duration: 0.5s;
+}
+

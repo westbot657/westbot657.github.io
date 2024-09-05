@@ -27,11 +27,17 @@ function main() {
             try {
                 let meta = await axios.get(val.url);
                 
+                let lang_images = ""
+                meta.data["languages"].forEach(element => {
+                    lang_images += "<img class='project-lang' src='/assets/content/lang_"+ element +".png' alt='"+ element +"'>"
+                });
+
                 let card =
                 "<div class='project-card' style=\"background-image:url('"+ val["background"] +"')\">\
                 <h1>"+ key +"</h1>\
                 <p>"+ meta.data.description +"</p>\
                 <p class='project-version'>"+ meta.data.version +"</p>\
+                <div class='project-langs'>"+ lang_images +"</div>\
                 </div>";
 
                 section.innerHTML += card;
