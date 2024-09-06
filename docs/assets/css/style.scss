@@ -187,6 +187,7 @@ body {
     float: right;
     background-color: rgba(0,0,0,0);
 }
+
 .project-card:hover > .project-langs {
     height: 214px;
     width: 223px;
@@ -194,3 +195,10 @@ body {
     animation-duration: 0.5s;
 }
 
+section {
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #171717;
+    margin-bottom: 20px;
+}
