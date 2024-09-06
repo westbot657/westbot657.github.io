@@ -1,4 +1,5 @@
 
+// backgrounds: 466x516
 const project_data = {
     "Insert Dungeon Name Here": {
         "url": "https://raw.githubusercontent.com/westbot657/DungeonEngine/main/project_meta.json",
@@ -19,6 +20,11 @@ const project_data = {
         "url": "https://raw.githubusercontent.com/westbot657/BlockBenchTitleGenExtra/main/project_meta.json",
         "background": "",
         "github": "https://github.com/westbot657/BlockBenchTitleGenExtra"
+    },
+    "Pixelator (Unmaintained)": {
+        "url": "https://raw.githubusercontent.com/westbot657/PixelArt/main/project_meta.json",
+        "background": "",
+        "github": "https://github.com/westbot657/PixelArt"
     }
 }
 
