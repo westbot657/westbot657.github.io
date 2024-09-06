@@ -23,7 +23,7 @@ const project_data = {
     },
     "Pixelator (Unmaintained)": {
         "url": "https://raw.githubusercontent.com/westbot657/PixelArt/main/project_meta.json",
-        "background": "",
+        "background": "/assets/content/pixelator_bg.png",
         "github": "https://github.com/westbot657/PixelArt"
     }
 }
