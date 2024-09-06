@@ -2,20 +2,32 @@
 const project_data = {
     "Insert Dungeon Name Here": {
         "url": "https://raw.githubusercontent.com/westbot657/DungeonEngine/main/project_meta.json",
-        "background": "/assets/content/dungeon_engine_bg.png"
+        "background": "/assets/content/dungeon_engine_bg.png",
+        "github": "https://github.com/westbot657/DungeonEngine"
     },
     "Ethereal Enchanting": {
         "url": "https://raw.githubusercontent.com/westbot657/EtherealEnchanting/master/project_meta.json",
-        "background": "/assets/content/ethereal_enchanting_bg.png"
+        "background": "/assets/content/ethereal_enchanting_bg.png",
+        "github": "https://github.com/westbot657/EtherealEnchanting"
     },
     "UI Library": {
         "url": "https://raw.githubusercontent.com/westbot657/UILibrary/main/project_meta.json",
-        "background": ""
+        "background": "",
+        "github": "https://github.com/westbot657/UILibrary"
     },
     "Blockbench TitleGenExtra": {
         "url": "https://raw.githubusercontent.com/westbot657/BlockBenchTitleGenExtra/main/project_meta.json",
-        "background": ""
+        "background": "",
+        "github": "https://github.com/westbot657/BlockBenchTitleGenExtra"
     }
+}
+
+function get_project_open(github_url) {
+    function open() {
+        window.open(github_url, "_blank");
+    }
+
+    return open
 }
 
 function main() {
@@ -33,7 +45,7 @@ function main() {
                 });
 
                 let card =
-                "<div class='project-card' style=\"background-image:url('"+ val["background"] +"')\">\
+                "<div id='"+ key +"' class='project-card' style=\"background-image:url('"+ val.background +"')\">\
                 <h1>"+ key +"</h1>\
                 <p>"+ meta.data.description +"</p>\
                 <p class='project-version'>"+ meta.data.version +"</p>\
@@ -41,6 +53,10 @@ function main() {
                 </div>";
 
                 section.innerHTML += card;
+
+                if (val.github != "") {
+                    document.getElementById(key).onclick = get_project_open(val.github)
+                }
 
             } catch {
                 // maybe make a "failed to load" card
