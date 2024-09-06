@@ -22,14 +22,6 @@ const project_data = {
     }
 }
 
-function get_project_open(github_url) {
-    function open() {
-        window.open(github_url, "_blank");
-    }
-
-    return open
-}
-
 function main() {
 
     let section = document.getElementById("projects_section");
@@ -45,7 +37,7 @@ function main() {
                 });
 
                 let card =
-                "<div id='"+ key +"' class='project-card' style=\"background-image:url('"+ val.background +"')\">\
+                "<div onclick=\"window.open('"+ val.github +"', '_blank')\" class='project-card' style=\"background-image:url('"+ val.background +"')\">\
                 <h1>"+ key +"</h1>\
                 <p>"+ meta.data.description +"</p>\
                 <p class='project-version'>"+ meta.data.version +"</p>\
@@ -53,10 +45,6 @@ function main() {
                 </div>";
 
                 section.innerHTML += card;
-
-                if (val.github != "") {
-                    document.getElementById(key).onclick = get_project_open(val.github)
-                }
 
             } catch {
                 // maybe make a "failed to load" card
