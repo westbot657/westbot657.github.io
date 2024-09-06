@@ -18,7 +18,7 @@ const project_data = {
     },
     "Blockbench TitleGenExtra": {
         "url": "https://raw.githubusercontent.com/westbot657/BlockBenchTitleGenExtra/main/project_meta.json",
-        "background": "",
+        "background": "/assets/content/blockbench_titlegenextra_bg.png",
         "github": "https://github.com/westbot657/BlockBenchTitleGenExtra"
     },
     "Pixelator (Unmaintained)": {
