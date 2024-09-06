@@ -49,7 +49,7 @@ function main() {
                 });
 
                 let card =
-                "<div href=\""+ val.github +"\" class='project-card' style=\"background-image:url('"+ val.background +"')\">\
+                "<div onclick='window.open(\""+ val.github +"\", \"_blank\")' class='project-card' style=\"background-image:url('"+ val.background +"')\">\
                 <h1>"+ key +"</h1>\
                 <p>"+ meta.data.description +"</p>\
                 <p class='project-version'>"+ meta.data.version +"</p>\
