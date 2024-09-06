@@ -13,7 +13,7 @@ const project_data = {
     },
     "UI Library": {
         "url": "https://raw.githubusercontent.com/westbot657/UILibrary/main/project_meta.json",
-        "background": "",
+        "background": "/assets/content/ui_library_bg.png",
         "github": "https://github.com/westbot657/UILibrary"
     },
     "Blockbench TitleGenExtra": {
