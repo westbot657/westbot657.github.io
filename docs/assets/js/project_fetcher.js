@@ -33,6 +33,7 @@ function main() {
     let section = document.getElementById("projects_section");
 
     (async() => {
+        let docHtml = "";
         for (const [key, val] of Object.entries(project_data)) {
             try {
                 let meta = await axios.get(val.url);
@@ -50,7 +51,7 @@ function main() {
                 <div class='project-langs'>"+ lang_images +"</div>\
                 </div>";
 
-                section.innerHTML += card;
+                docHtml += card;
 
             } catch {
                 // maybe make a "failed to load" card
@@ -60,10 +61,13 @@ function main() {
                 <p>Failed to load project data</p>\
                 </div>";
 
-                section.innerHTML += card;
+                docHtml += card;
             }
             
         }
+
+        section.innerHTML = docHtml;
+
     })()
 }
 
