@@ -4,7 +4,7 @@
 @import "{{ site.theme }}";
 
 body {
-    background: #090909;
+    background: #101010;
     color: #EEEEEE;
 }
 
@@ -63,10 +63,6 @@ body {
     }
 }
 
-:root {
-    --card-color: linear-gradient(180deg, #000000 0%, #000416 27%, #0c0c40 100%);
-}
-
 .project-card {
     display: inline-table;
     width: 225px;
@@ -75,17 +71,16 @@ body {
     margin: 8px;
     border: solid black 1px;
     border-radius: 6px;
-    background: #000000;
-    background: var(--card-color);
+    background: #090909;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/docs/assets/content/dungeon_engine_bg.png");
+    box-shadow: 0 0 16px 8px #090909 inset;
 }
 
 .project-card > h1 {
     font-size: 16px;
     text-align: center;
-    margin:4px;
+    margin: 4px;
 }
 
 .project-card:hover {
