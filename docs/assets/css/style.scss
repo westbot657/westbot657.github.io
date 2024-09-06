@@ -187,7 +187,7 @@ body {
     float: right;
     background-color: rgba(0,0,0,0);
 }
-.project-langs:hover {
+.project-card:hover > .project-langs {
     height: 214px;
     width: 223px;
     animation-name: hover_langs;
