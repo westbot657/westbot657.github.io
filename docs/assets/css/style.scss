@@ -217,12 +217,12 @@ section {
 
 @keyframes aside_transition {
     0% {
-        transform: translate(-200px, 120px);
+        transform: translate(-200px, 140px);
     }
 }
 @keyframes aside_t2 {
     0% {
-        transform: translate(-20px, 120px);
+        transform: translate(-20px, 140px);
     }
 }
 
@@ -235,7 +235,7 @@ section {
     padding-left: 30px;
     height: 80vh;
     z-index: 5;
-    transform: translate(0, 120px);
+    transform: translate(0, 140px);
     overflow-y: scroll;
     height: calc(100vh - 180px) !important;
 }
@@ -250,14 +250,14 @@ section {
 
 @media (max-width: 1410px) {
     .left-aside {
-        transform:translate(-200px, 120px);
+        transform:translate(-200px, 140px);
         margin: 10px;
         animation-name: aside_t2;
         animation-duration: 0.5s;
     }
 
     .left-aside:hover {
-        transform: translate(-20px, 120px);
+        transform: translate(-20px, 140px);
         animation-name: aside_transition;
         animation-duration: 0.5s;
     }
