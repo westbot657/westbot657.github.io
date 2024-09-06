@@ -16,6 +16,11 @@ const project_data = {
         "background": "/assets/content/ui_library_bg.png",
         "github": "https://github.com/westbot657/UILibrary"
     },
+    "Blockbench SGA Font": {
+        "url": "https://raw.githubusercontent.com/westbot657/westbot657.github.io/main/project_metas/blockbench_sga_meta.json",
+        "background": "/assets/content/blockbench_sga.png",
+        "github": "https://github.com/westbot657/MinecraftTitleGeneratorFork"
+    },
     "Blockbench TitleGenExtra": {
         "url": "https://raw.githubusercontent.com/westbot657/BlockBenchTitleGenExtra/main/project_meta.json",
         "background": "/assets/content/blockbench_titlegenextra_bg.png",

@@ -1,0 +1,6 @@
+{
+    "_comment": "This file is seperated from the repository, as that repo is a fork, and adding the meta file there intrudes on the main project",
+    "description": "My fork for contributing to Minecraft Title Generator by Ewan Howell",
+    "version": "",
+    "languages": ["mc"]
+}
