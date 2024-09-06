@@ -38,6 +38,7 @@ body {
     padding-top: 147px;
 }
 
+// hover animations
 @keyframes hover_project {
     from {
         width: 225px;
@@ -63,7 +64,57 @@ body {
     }
 }
 
+@keyframes hover_langs {
+    from {
+        width: 215px;
+        height: 206px;
+    }
+    to {
+        width: 223px;
+        height: 214px;
+    }
+}
+
+// un-hover animations
+@keyframes unhover_project {
+    to {
+        width: 225px;
+        height: 250px;
+        margin: 8px;
+    }
+    from {
+        width: 233px;
+        height: 258px;
+        margin: 4px;
+        margin-bottom: 2px;
+    }
+}
+
+@keyframes unhover_version {
+    to {
+        height: 208px;
+        align-content: end;
+    }
+    from {
+        height: 216px;
+        align-content: end;
+    }
+}
+
+@keyframes unhover_langs {
+    to {
+        width: 215px;
+        height: 206px;
+    }
+    from {
+        width: 223px;
+        height: 214px;
+    }
+}
+
 .project-card {
+    animation-name: unhover_project;
+    animation-duration: 0.5s;
     display: inline-table;
     width: 225px;
     height: 250px;
@@ -101,14 +152,17 @@ body {
 }
 
 .project-card > p {
+    margin-left: 5px;
     float: left;
     position: absolute;
-    max-width: 215px;
+    max-width: 210px;
 }
 
 .project-card > .project-version {
     height: 208px;
     align-content: end;
+    animation-name: unhover_version;
+    animation-duration: 0.5s;
 }
 
 .project-card:hover > .project-version {
@@ -123,18 +177,10 @@ body {
     align-content: end;
     position: absolute;
     width: 215px;
+    animation-name: unhover_langs;
+    animation-duration: 0.5s;
 }
 
-@keyframes hover_langs {
-    from {
-        width: 215px;
-        height: 206px;
-    }
-    to {
-        width: 223px;
-        height: 214px;
-    }
-}
 
 .project-langs > .project-lang {
     width: 40px;
