@@ -272,6 +272,7 @@ section {
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
 /* Track */
@@ -291,7 +292,19 @@ section {
     background: #262626;
 }
 
+::-webkit-scrollbar-corner {
+    background-color: #101010;
+}
+
 details summary::-webkit-details-marker,
 details summary::marker {
     color: #737373;
+}
+
+.under-construction {
+    background-color: rgba(0,0,0,0);
+    background-image: url("../../../assets/content/under_construction.png");
+    width: 1024px;
+    height: 720px;
+    box-shadow: 0 0 15px 15px #101010 inset;
 }
