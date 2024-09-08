@@ -21,7 +21,8 @@ function fetch_releases() {
         }
 
         if (docHtml != "") {
-            section.innerHTML = docHtml;
+            section.removeAttribute("style")
+            section.innerHTML = "<ul id='releases'>" + docHtml + "</ul>";
         }
     })();
 }
