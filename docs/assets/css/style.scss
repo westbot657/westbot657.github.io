@@ -133,17 +133,6 @@ section {
     width: 32px;
 }
 
-@keyframes aside_transition {
-    0% {
-        transform: translate(-200px, 140px);
-    }
-}
-@keyframes aside_t2 {
-    0% {
-        transform: translate(-20px, 140px);
-    }
-}
-
 .left-aside {
     display: block;
     position: fixed;
