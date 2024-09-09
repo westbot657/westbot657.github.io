@@ -42,7 +42,7 @@ permalink: /
 
     </head>
     <body>
-        <section class="left-aside">
+        <!--section class="left-aside">
             <h2>
                 Directory
             </h2>
@@ -63,7 +63,7 @@ permalink: /
                 </p>
             </details>
 
-        </section>
+        </section-->
 
         <div class="gradient-container" id="pageHeader">
             <div class="container-lg px-3 markdown-body">
@@ -79,15 +79,43 @@ permalink: /
 
         <div class="content">
             <div class="container-lg px-3 markdown-body">
-                <h2>
-                My Github Projects
-                </h2>
+                <h2>My Github Projects</h2>
                 <div id="projects_section">
                 <div class="loading-img"><img src="assets/content/loading.gif"></div>
                 </div>
 
+
+                <h2>Project Wikis</h2>
+                <div class="wiki-nav-container">
+                    <a href="/wiki/idnh/home">
+                        <div class="wiki-nav">
+                            <h3 class="wiki-h">IDNH Wiki</h3>
+                            <p>
+                                The wiki for all things IDNH related.<br>
+                                Downloads are also found here.
+                            </p>
+                        </div>
+                    </a>
+        
+                    <a href="/wiki/ethereal_enchanting/home">
+                        <div class="wiki-nav">
+                            <h3 class="wiki-h">Ethereal Enchanting Wiki</h3>
+                            <p>
+                                The Ethereal Enchanting wiki.<br>
+                                <span id="ee_warn">
+                                    I recommend trying to play the mod without using the wiki for the best experience.
+                                </span><br>
+                                <!--Mod downloads can be found on Modrinth -- TODO: uncomment once I release the mod -->
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </div>
+
+
+        
 
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="assets/js/project_fetcher.js"></script>
