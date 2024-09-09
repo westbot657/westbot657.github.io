@@ -39,81 +39,7 @@ body {
     padding-top: 147px;
 }
 
-@keyframes hover_project {
-    from {
-        width: 225px;
-        height: 250px;
-        margin: 8px;
-    }
-    to {
-        width: 233px;
-        height: 258px;
-        margin: 4px;
-        margin-bottom: 0px;
-    }
-}
-
-@keyframes hover_version {
-    from {
-        height: 208px;
-        align-content: end;
-    }
-    to {
-        height: 216px;
-        align-content: end;
-    }
-}
-
-@keyframes hover_langs {
-    from {
-        width: 215px;
-        height: 206px;
-    }
-    to {
-        width: 223px;
-        height: 214px;
-    }
-}
-
-@keyframes unhover_project {
-    to {
-        width: 225px;
-        height: 250px;
-        margin: 8px;
-    }
-    from {
-        width: 233px;
-        height: 258px;
-        margin: 4px;
-        margin-bottom: 0px;
-    }
-}
-
-@keyframes unhover_version {
-    to {
-        height: 208px;
-        align-content: end;
-    }
-    from {
-        height: 216px;
-        align-content: end;
-    }
-}
-
-@keyframes unhover_langs {
-    to {
-        width: 215px;
-        height: 206px;
-    }
-    from {
-        width: 223px;
-        height: 214px;
-    }
-}
-
 .project-card {
-    animation-name: unhover_project;
-    animation-duration: 0.5s;
     display: inline-table;
     width: 225px;
     height: 250px;
@@ -126,6 +52,7 @@ body {
     background-size: cover;
     box-shadow: 0 0 16px 8px #090909 inset;
     position: relative;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, margin 0.2s ease-in-out, margin-bottom 0.2s ease-in-out;
 }
 
 .project-card > h1 {
@@ -135,8 +62,6 @@ body {
 }
 
 .project-card:hover {
-    animation-name: hover_project;
-    animation-duration: 0.5s;
     width: 233px;
     height: 258px;
     margin: 4px;
@@ -163,15 +88,11 @@ body {
 .project-card > .project-version {
     height: 208px;
     align-content: end;
-    animation-name: unhover_version;
-    animation-duration: 0.5s;
+    transition: height 0.2s ease-in-out;
 }
 
 .project-card:hover > .project-version {
     height: 216px;
-    align-content: end;
-    animation-duration: 0.5s;
-    animation-name: hover_version;
 }
 
 .project-langs {
@@ -179,8 +100,6 @@ body {
     align-content: end;
     position: absolute;
     width: 215px;
-    animation-name: unhover_langs;
-    animation-duration: 0.5s;
 }
 
 .project-langs > .project-lang {
@@ -188,13 +107,12 @@ body {
     float: right;
     background-color: transparent;
     margin-left: 4px;
+    transition: height 0.2s ease-in-out, width 02.s ease-in-out;
 }
 
 .project-card:hover > .project-langs {
     height: 214px;
     width: 223px;
-    animation-name: hover_langs;
-    animation-duration: 0.5s;
 }
 
 section {
@@ -262,14 +180,11 @@ section {
     .left-aside {
         transform:translate(-200px, 140px);
         margin: 10px;
-        animation-name: aside_t2;
-        animation-duration: 0.5s;
+        transition: transform 0.3s ease-in-out;
     }
 
     .left-aside:hover {
         transform: translate(-20px, 140px);
-        animation-name: aside_transition;
-        animation-duration: 0.5s;
     }
 }
 
@@ -417,5 +332,14 @@ details summary::marker {
 
 #ee_warn {
     color: rgb(180, 0, 0);
+}
+
+.wiki-hov {
+    background-color: #0D0D0D;
+    transition: background-color 0.3s ease;
+}
+
+.wiki-hov:hover {
+    background-color: #171717;
 }
 
