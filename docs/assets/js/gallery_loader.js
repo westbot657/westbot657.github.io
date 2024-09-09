@@ -16,7 +16,7 @@ function load_gallery() {
 
         div.innerHTML =
         "<h2>" + title + "</h2>" +
-        "<img src='" + src + "&sz=w" + width + "' alt='" + alt +"' loading='lazy' />" +
+        "<div class='gallery-img-wrap'><img src='" + src + "&sz=w" + width + "' alt='" + alt +"' loading='lazy' /></div>" +
         "<p class='gallery-desc'>" + desc + "</p>"
 
         element.replaceWith(div);
