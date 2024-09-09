@@ -264,10 +264,6 @@ details summary::marker {
     color: #AACCAA;
 }
 
-.spacer-20 {
-    height: 20px;
-}
-
 .markdown-body img {
     background-color: transparent;
 }
@@ -344,4 +340,8 @@ details summary::marker {
 
 .wiki-hov:hover::before {
     background-color: rgba(255, 255, 255, 0.05);
+}
+
+.spacer {
+    height: var(--sh, 20px)
 }
