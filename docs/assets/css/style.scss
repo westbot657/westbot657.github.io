@@ -327,9 +327,21 @@ details summary::marker {
 .wiki-hov {
     background-color: #0D0D0D;
     transition: background-color 0.3s ease;
+    min-height: 400px;
+    padding: 20px;
+    transition: background-color 0.3s ease;
 }
 
 .wiki-hov:hover {
     background-color: #171717;
 }
 
+.wiki-hov::before {
+    z-index: 1;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.wiki-hov:hover::before {
+    background-color: rgba(255, 255, 255, 0.05);
+}
