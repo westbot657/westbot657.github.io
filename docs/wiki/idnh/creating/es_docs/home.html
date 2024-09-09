@@ -39,8 +39,7 @@ permalink: /wiki/idnh/creating/es_docs/home
         <meta name="msapplication-navbutton-color" content="#353535">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-        
-        <link rel="stylesheet" href="/path/to/styles/default.css"/>
+    
     </head>
     <body>
 
@@ -145,13 +144,11 @@ permalink: /wiki/idnh/creating/es_docs/home
                         Back in your object's json file, put the path to your new script file in the event you want.<br>
                         <br>
                         Example:<br>
-                        <pre><code>
-                            {
-                                "on_enter": {
-                                    "#script": "PATH_TO_SCRIPT" // it does not matter if you include the file extension or not. 
-                                }
-                            }
-                        </code></pre>
+                        <blockquote>
+<span class="json-key">"on_enter"</span><span class="json-colon">:</span> <span class="json-bracket">{</span><br>
+&Tab;<span class="json-key">"#script"</span><span class="json-colon">:</span> <span class="json-string">"PATH_TO_SCRIPT"</span> <span class="code-comment">// It does not matter if you include the file extension or not.</span><br>
+<span class="json-bracket">}</span>
+                        </blockquote>
                     </section>
                 </div>
 
@@ -168,8 +165,5 @@ permalink: /wiki/idnh/creating/es_docs/home
             </div>
         </div>
 
-
-        <script src="/path/to/highlight.pack.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>

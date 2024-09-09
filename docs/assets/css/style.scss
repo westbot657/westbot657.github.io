@@ -415,3 +415,21 @@ details summary::marker {
 }
 
 
+// JSON Syntax highlighting
+.json-bracket, .json-colon {
+    color: #CCCCCC
+}
+
+.json-key {
+    color: #9CDCFE
+}
+
+.json-string {
+    color: #CE9178
+}
+
+
+.code-comment {
+    color: #6A9955
+}
+
