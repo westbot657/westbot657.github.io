@@ -362,3 +362,56 @@ details summary::marker {
 .spacer-20 {
     height: 20px;
 }
+
+.markdown-body img {
+    background-color: transparent;
+}
+
+
+.center {
+    align-content: center;
+    padding-left: calc(50% - 90px);
+    padding-top: 10px;
+}
+
+.discord-card {
+    position: relative;
+    width: 260px;
+    height: 100px;
+    background-color: #2b2d31;
+    border-radius: 5px;
+    margin-left: calc(50% - 130px)
+}
+
+.discord-image {
+    position: absolute;
+    width: 56px;
+    top: 35px;
+    left: 20px
+}
+.discord-title {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    font-family:monospace;
+    font-style: normal;
+}
+
+.discord-button {
+    position: absolute;
+    width: 75px;
+    height: 40px;
+    background-color: #248046;
+    border-radius: 5px;
+    top: 40px;
+    left: 155px;
+    align-content: center;
+    text-align: center;
+    font-size: smaller;
+    transition: background-color 0.2s ease;
+}
+
+.discord-button:hover {
+    background-color: #1a6334;
+    
+}
