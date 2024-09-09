@@ -39,6 +39,8 @@ permalink: /wiki/idnh/creating/es_docs/home
         <meta name="msapplication-navbutton-color" content="#353535">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
+        
+        <link rel="stylesheet" href="/path/to/styles/default.css"/>
     </head>
     <body>
 
@@ -54,13 +56,120 @@ permalink: /wiki/idnh/creating/es_docs/home
             </div>
         </div>
 
+        <style>
+            .app::before {
+                content: "APP";
+                float: left;
+                font-family:monospace;
+                font-size: 12px;
+                color: #AAAAAA;
+                transform: translate(-10px, -18px);
+            }
+
+            .raw::before {
+                content: "VSCODE";
+                float: left;
+                font-family:monospace;
+                font-size: 12px;
+                color: #AAAAAA;
+                transform: translate(-10px, -18px);
+            }
+
+            section {
+                margin-bottom: 10px;
+            }
+
+            .split {
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+
+            .split > section {
+                margin-top: 0;
+            }
+
+        </style>
+
         <div class="content">
             <div class="container-lg px-3 markdown-body">
                 <h2>Engine Script | Docs and Reference</h2>
                 <div class="under-construction"></div>
+                <div class="split">
+                    <section class="split-3">
+                        <h2>About Engine Script</h2>
+                        <p>
+                            Engine Script is a scripting language written specifically for this engine.
+                            It allows creators to write clean, readable code.
+                        </p>
+                    </section>
+                    <section class="split-1">
+                        <h2>Links</h2>
+                        <ul>
+                            <li><a>Lexical specifications</a></li>
+                            <li><a>Grammar ruleset</a></li>
+                        </ul>
+                    </section>
+                    
+                </div>
 
+                <section style="margin-top: 5px;">
+                    <span style="font-size:12px;font-family:monospace">
+                        * This page assumes you have already set up a project from either the template and VS Code, or by using the IDNH App
+                    </span><br>
+                    <h2>Sections</h2>
+                    <ul class="table-of-contents">
+                        <li><a href="#making-scripts">Where to make script files</a></li>
+                        <li><a href="#enter-scripts">Making an on-enter event script</a></li>
+                        <li><a href="#input-scripts">Making an on-input event script</a></li>
+                        <li><a href="#exit-scripts">Making an on-exit event script</a></li>
+                    </ul>
+                </section>
+
+                <section id="making-scripts"></section>
+                <div class="split">
+                    <section class="split-2 app">
+                        <span class="warn">NOTE: this feature is planned but not currently available</span><br>
+                        On the object you want to add a script to, right-click the script cell and choose "New Script"
+                    </section>
+                    <section class="split-2 raw">
+                        Step 1.<br>
+                        Take note of the path to the object you want to add a script to.<br>
+                        this path should look like <code>DUNGEON_ID/path_to_object.json</code><br>
+                        <br>
+                        Step 2.<br>
+                        Create a new file at <code>DUNGEON_ID/scripts/path_to_object/</code><br>
+                        The file can be named anything, but it is reccommended to name it after the event name.<br>
+                        <span class="warn">Only use characters a-z 0-9 and underscore for file names</span><br>
+                        <br>
+                        Step 3.<br>
+                        Back in your object's json file, put the path to your new script file in the event you want.<br>
+                        <br>
+                        Example:<br>
+                        <pre><code>
+                            {
+                                "on_enter": {
+                                    "#script": "PATH_TO_SCRIPT" // it does not matter if you include the file extension or not. 
+                                }
+                            }
+                        </code></pre>
+                    </section>
+                </div>
+
+
+                <section id="enter-scripts"></section>
+
+
+                    
+                <section id="input-scripts"></section>
+
+
+
+                <section id="exit-scripts"></section>
             </div>
         </div>
 
+
+        <script src="/path/to/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>
