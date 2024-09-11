@@ -6,6 +6,11 @@ const project_data = {
         "background": "/assets/content/dungeon_engine_bg.png",
         "github": "https://github.com/westbot657/DungeonEngine"
     },
+    "IDNH Editor App": {
+        "url": "https://raw.githubusercontent.com/westbot657/IDNHRust/main/project_meta.json",
+        "background": "/assets/content/dungeon_engine_bg.png",
+        "github": "https://github.com/westbot657/IDNHRust"
+    },
     "Ethereal Enchanting": {
         "url": "https://raw.githubusercontent.com/westbot657/EtherealEnchanting/master/project_meta.json",
         "background": "/assets/content/ethereal_enchanting_bg.png",
