@@ -62,7 +62,8 @@ permalink: /wiki/idnh/creating/es_docs/home
                 font-family:monospace;
                 font-size: 12px;
                 color: #AAAAAA;
-                transform: translate(-10px, -18px);
+                transform: translate(-10px, -15px);
+                width: 100%;
             }
 
             .raw::before {
@@ -71,7 +72,8 @@ permalink: /wiki/idnh/creating/es_docs/home
                 font-family:monospace;
                 font-size: 12px;
                 color: #AAAAAA;
-                transform: translate(-10px, -18px);
+                transform: translate(-10px, -15px);
+                width: 100%;
             }
 
             section {
@@ -118,50 +120,44 @@ permalink: /wiki/idnh/creating/es_docs/home
                     <h2>Sections</h2>
                     <ul class="table-of-contents">
                         <li><a href="#making-scripts">Where to make script files</a></li>
-                        <li><a href="#enter-scripts">Making an on-enter event script</a></li>
-                        <li><a href="#input-scripts">Making an on-input event script</a></li>
-                        <li><a href="#exit-scripts">Making an on-exit event script</a></li>
+                        <li><a href="#script-requirements">Requirements for different script types</a></li>
                     </ul>
                 </section>
 
-                <section id="making-scripts"></section>
+                <section id="making-scripts">
+                    <h2>Where to make script files</h2>
+                </section>
                 <div class="split">
                     <section class="split-2 app">
                         <span class="warn">NOTE: this feature is planned but not currently available</span><br>
                         On the object you want to add a script to, right-click the script cell and choose "New Script"
                     </section>
                     <section class="split-2 raw">
-                        Step 1.<br>
+                        <strong>Step 1.</strong><br>
                         Take note of the path to the object you want to add a script to.<br>
                         this path should look like <code>DUNGEON_ID/path_to_object.json</code><br>
                         <br>
-                        Step 2.<br>
+                        <strong>Step 2.</strong><br>
                         Create a new file at <code>DUNGEON_ID/scripts/path_to_object/</code><br>
                         The file can be named anything, but it is reccommended to name it after the event name.<br>
                         <span class="warn">Only use characters a-z 0-9 and underscore for file names</span><br>
                         <br>
-                        Step 3.<br>
+                        <strong>Step 3.</strong><br>
                         Back in your object's json file, put the path to your new script file in the event you want.<br>
                         <br>
                         Example:<br>
-                        <blockquote>
-<span class="json-key">"on_enter"</span><span class="json-colon">:</span> <span class="json-bracket">{</span><br>
-&Tab;<span class="json-key">"#script"</span><span class="json-colon">:</span> <span class="json-string">"PATH_TO_SCRIPT"</span> <span class="code-comment">// It does not matter if you include the file extension or not.</span><br>
+                        <blockquote class="code-block" style="border:none;">
+<span class="json-key">"on_enter"</span><span class="json-colon">:</span> <span class="json-bracket">{</span>
+    <span class="json-key">"#script"</span><span class="json-colon">:</span> <span class="json-string">"PATH_TO_SCRIPT"</span> <span class="code-comment">// It does not matter if you include the file extension or not.</span>
 <span class="json-bracket">}</span>
                         </blockquote>
                     </section>
                 </div>
 
 
-                <section id="enter-scripts"></section>
-
-
-                    
-                <section id="input-scripts"></section>
-
-
-
-                <section id="exit-scripts"></section>
+                <section id="script-requirements">
+                    <h2>Requirements for different script types</h2>
+                </section>
             </div>
         </div>
 
