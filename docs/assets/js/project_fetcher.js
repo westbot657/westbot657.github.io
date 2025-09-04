@@ -1,21 +1,6 @@
 
 // backgrounds: 466x516
 const project_data = {
-    "Insert Dungeon Name Here": {
-        "url": "https://raw.githubusercontent.com/westbot657/DungeonEngine/main/project_meta.json",
-        "background": "/assets/content/dungeon_engine_bg.png",
-        "github": "https://github.com/westbot657/DungeonEngine"
-    },
-    "IDNH Editor App": {
-        "url": "https://raw.githubusercontent.com/westbot657/IDNHRust/main/project_meta.json",
-        "background": "/assets/content/dungeon_engine_bg.png",
-        "github": "https://github.com/westbot657/IDNHRust"
-    },
-    // "Ethereal Enchanting": {
-    //     "url": "https://raw.githubusercontent.com/westbot657/EtherealEnchanting/master/project_meta.json",
-    //     "background": "/assets/content/ethereal_enchanting_bg.png",
-    //     "github": "https://github.com/westbot657/EtherealEnchanting"
-    // },
     "UI Library": {
         "url": "https://raw.githubusercontent.com/westbot657/UILibrary/main/project_meta.json",
         "background": "/assets/content/ui_library_bg.png",
@@ -31,7 +16,7 @@ const project_data = {
         "background": "/assets/content/blockbench_titlegenextra_bg.png",
         "github": "https://github.com/westbot657/BlockBenchTitleGenExtra"
     },
-    "Pixelator (Unmaintained)": {
+    "Pixelator": {
         "url": "https://raw.githubusercontent.com/westbot657/PixelArt/main/project_meta.json",
         "background": "/assets/content/pixelator_bg.png",
         "github": "https://github.com/westbot657/PixelArt"
