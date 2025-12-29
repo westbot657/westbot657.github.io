@@ -1,0 +1,5 @@
+{
+    "description": "A sandboxed-by-default python interpreter in rust.",
+    "version": "ALPHA-0.1.0",
+    "languages": ["rust", "python"]
+}

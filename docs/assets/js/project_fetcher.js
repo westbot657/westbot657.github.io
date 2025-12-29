@@ -1,26 +1,21 @@
 
 // backgrounds: 466x516
 const project_data = {
-    "UI Library": {
-        "url": "https://raw.githubusercontent.com/westbot657/UILibrary/main/project_meta.json",
-        "background": "/assets/content/ui_library_bg.png",
-        "github": "https://github.com/westbot657/UILibrary"
+    "Turing-APIs": {
+        "url": "https://raw.githubusercontent.com/westbot657/westbot657.github.io/main/project_metas/turing_apis.json",
+        "background": "/assets/cointent/turing_apis.png",
+        "github": "https://github.com/westbot657/Turing-APIs"
     },
-    "Blockbench SGA Font": {
-        "url": "https://raw.githubusercontent.com/westbot657/westbot657.github.io/main/project_metas/blockbench_sga_meta.json",
-        "background": "/assets/content/blockbench_sga.png",
-        "github": "https://github.com/westbot657/MinecraftTitleGeneratorFork"
+    "RenderForge": {
+        "url": "https://raw.githubusercontent.com/westbot657/westbot657.github.io/main/project_metas/render_forge.json",
+        "background": "/assets/content/render_forge.png",
+        "github": "https://github.com/westbot657/RenderForge"
     },
-    "Blockbench TitleGenExtra": {
-        "url": "https://raw.githubusercontent.com/westbot657/BlockBenchTitleGenExtra/main/project_meta.json",
-        "background": "/assets/content/blockbench_titlegenextra_bg.png",
-        "github": "https://github.com/westbot657/BlockBenchTitleGenExtra"
+    "Pycrust": {
+        "url": "https://raw.githubusercontent.com/westbot657/westbot657.github.io/main/project_metas/pycrust.json",
+        "background": "/assets/content/pycrsut.png",
+        "github": "https://github.com/westbot657/PyCrust"
     },
-    "Pixelator": {
-        "url": "https://raw.githubusercontent.com/westbot657/PixelArt/main/project_meta.json",
-        "background": "/assets/content/pixelator_bg.png",
-        "github": "https://github.com/westbot657/PixelArt"
-    }
 }
 
 function main() {

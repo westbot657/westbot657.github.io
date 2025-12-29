@@ -1,0 +1,5 @@
+{
+    "description": "A rust library wrapping openGL to make apps with 3D and GUIs",
+    "version": "0.1.0",
+    "languages": ["rust"]
+}
